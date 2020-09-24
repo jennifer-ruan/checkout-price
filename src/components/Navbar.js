@@ -1,6 +1,6 @@
 import React from 'react';
 import 'materialize-css';
- const Navbar = ()=>{
+const Navbar = ()=>{
     
     return(
         
@@ -12,8 +12,8 @@ import 'materialize-css';
                     <li><a href="frozen.html">frozen</a></li>
                 </ul>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="cart.html">cart</a></li>
-                    <li><a href="user.html">user</a></li>
+                    <li><a href="cart.html"><i className="material-icons">person</i></a></li>
+                    <li><a href="user.html"><i className="material-icons">shopping_cart</i></a></li>
                 </ul>
             </div>
          </nav> 
