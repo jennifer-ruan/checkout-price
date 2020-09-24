@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.Picture{
+  height: 150px;
+  width: 150px;
+}
+.card{
+  height: 300px;
+  width: 300px;
+}
+.card .card-image .card-title{
+  color: black;
+  font-weight: 200
+}
