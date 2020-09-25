@@ -9,15 +9,22 @@ class Main extends Component{
     constructor(props){
         super(props);
         this.addToCart = this.addToCart.bind(this);
+        this.toggleCart = this.toggleCart.bind(this);
         this.state = {
             items: [],
             numItems: 0,
+            showCart: false,
         }
     }
     addToCart(id){
         this.setState({
-            items: [...this.state.items, Items[id]],
+            items: [...this.state.items, Items[id-1]],
             numItems: this.state.numItems+1,
+        })
+    }
+    toggleCart(){
+        this.setState({
+            showCart: !this.state.showCart,
         })
     }
     render (){
@@ -41,10 +48,10 @@ class Main extends Component{
         return(
             <div className="container">
                 <h3 className="center">Groceries</h3>
-                <p>{this.state.numItems} items in cart</p>
+                <h5>{this.state.numItems} items in cart</h5>
+                <Cart items={this.state.items}/>
                 <div className="box">
                     {itemList}
-                    <Cart items={this.state.items}/>
                 </div>
             </div>
         )
