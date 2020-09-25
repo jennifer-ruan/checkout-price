@@ -6,7 +6,7 @@ class Cart extends Component {
         return(
             <div className="container">
                 {<ul>
-                    {this.props.items.map((item) => <h6>{item.desc}</h6>)}
+                    {this.props.items.map((item) => <h6>{item.desc} ${item.price}</h6>)}
                 </ul>}
             </div>
         )
