@@ -47,11 +47,19 @@ class Main extends Component{
         })
         return(
             <div className="container">
-                <h3 className="center">Groceries</h3>
-                <h5>{this.state.numItems} items in cart</h5>
-                <Cart items={this.state.items}/>
-                <div className="box">
-                    {itemList}
+                <div className="row">
+                    <div className="col s9">
+                        <h3 className="center">Groceries</h3>
+                        <div className="box">
+                            {itemList}
+                        </div>
+                    </div>
+
+                    <div className="col s3">
+                        <h4 className="center">Cart</h4>
+                        <h5>{this.state.numItems} items in cart</h5>
+                        <Cart items={this.state.items}/>
+                    </div>
                 </div>
             </div>
         )
