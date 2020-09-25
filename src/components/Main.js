@@ -31,7 +31,6 @@ class Main extends Component{
                 <h3 className="center">Groceries</h3>
                 <div className="box">
                     {itemList}
-                    {ItemList}
                 </div>
             </div>
         )
