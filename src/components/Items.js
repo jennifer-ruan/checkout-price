@@ -2,9 +2,9 @@ const Items = [
     {
         id: 1,
         alt: "meat",
-        title: "meat",
+        title: "meat/seafood",
         desc: "ground beef",
-        price: "20.0",
+        price: 20,
         src: require("../images/ground_beef.jpg"),
     },
     {
@@ -12,15 +12,15 @@ const Items = [
         alt: "veggie",
         title: "veggie",
         desc: "lettuce",
-        price: "10.0",
+        price: 10,
         src: require("../images/lettuce.jpg"),
     },
     {
         id: 3,
         alt: "seafood",
-        title: "seafood",
+        title: "meat",
         desc: "squid",
-        price: "30.0",
+        price: 30,
         src: require("../images/squid.jpg"),
 
     }

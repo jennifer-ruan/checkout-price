@@ -36,7 +36,9 @@
     transform: rotate(360deg);
   }
 }
-
+.cart{
+  width: 500px;
+}
 .Picture{
   height: 150px;
   width: 150px;
@@ -44,8 +46,9 @@
 .card{
   height: 300px;
   width: 300px;
+  align-items: center;
 }
 .card .card-image .card-title{
-  color: black;
+  color: pink;
   font-weight: 200
 }
