@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
 import Items from './Items.js';
+import ItemsView from './ItemsView.js';
+import Cart from './Cart.js';
 import 'materialize-css';
 import "../App.css";
-//import { connect } from 'react-redux'
- 
+
 class Main extends Component{
     constructor(props){
         super(props);
         this.addToCart = this.addToCart.bind(this);
-        this.toggleCart = this.toggleCart.bind(this);
         this.quant = this.quant.bind(this);
         this.displayCart = this.displayCart.bind(this);
         this.addFromCart = this.addFromCart.bind(this);
         this.state = {
             items: [],
             numItems: 0,
-            showCart: false,
             total: 0,
             quantity: [0,0,0],
         }
@@ -120,11 +119,6 @@ class Main extends Component{
             this.state.items[id][0] -= 1;
         }
     }
-    toggleCart(){
-        this.setState({
-            showCart: !this.state.showCart,
-        })
-    }
     displayCart(){
         let cartList = []
         {this.state.items.map((value, id) => {
@@ -135,35 +129,14 @@ class Main extends Component{
         return cartList
     }
     render (){
-        let itemList = Items.map(item =>{
-            return (
-                <div className="card" key={item.id}>
-                    
-                    <div className="container">
-                    <img src={item.src} className = "Picture" alt={item.title}/>
-                    <span to="/" className="btn-floating halfway-fab waves-effect waves-light blue-grey" onClick={() => {this.addToCart(item.id);}}><i className="material-icons">add_shopping_cart</i></span>
-                    </div>
-
-
-                    <div className="card-content">
-                    <p><b>{item.desc}</b></p>
-                    <p><b>Price: ${item.price}</b></p>
-                    </div>
-                </div>
-            )
-        })
         let cartList = this.displayCart().map((item, index) => {
             return(
                 <div className="cart" key={item.id}>
-                    <div claaName="buttons">
-                    <a className="waves-effect waves-light btn-small blue" onClick={() => {this.deleteFromCart(index);}}><i className="material-icons">remove</i></a>                               
                     <h9> descr: {item[0]} </h9>
                     <h10> amount: {item[1]} </h10>
                     <h10> id: {item[2]} </h10>
-
+                    <a className="waves-effect waves-light btn-small blue" onClick={() => {this.deleteFromCart(index);}}><i className="material-icons">remove</i></a>
                     <a className="waves-effect waves-light btn-small red" onClick={() => {this.addFromCart(item[2]);}}><i className="material-icons">add</i></a>
-
-                    </div>
                 </div>
             )
             
@@ -175,7 +148,7 @@ class Main extends Component{
                     <div className="col s9">
                         <h3 className="center">Groceries</h3>
                         <div className="box">
-                            {itemList}
+                            <ItemsView addItem={this.addToCart}/>
                         </div>
                     </div>
 
@@ -197,4 +170,4 @@ class Main extends Component{
 }
 
 
-export default Main
+export default Main;
