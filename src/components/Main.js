@@ -157,7 +157,6 @@ class Main extends Component{
                     <div className="col s9">
                         <h3 className="center">Groceries</h3>
                         <div className="box">
-                            {this.state.items.length}
                             <ItemsView addItem={this.addToCart}/>
                         </div>
                     </div>
