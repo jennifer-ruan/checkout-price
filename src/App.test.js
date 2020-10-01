@@ -28,12 +28,6 @@ test('renders items', () => {
   expect(text).toBeInTheDocument();
 });
 
-//Tests if Main initializes with the correct state
-test('correctly initializes state', () => {
-  const { getByText } = render(<Main />);
-  expect({ getByText }.initialState.toEqual({ items: [] }))
-})
-
 /* CART TESTS */
 
 //Tests if Cart initializes displaying the correct information
