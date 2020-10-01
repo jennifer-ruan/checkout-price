@@ -31,18 +31,12 @@ test('renders items', () => {
 //Tests if Main initializes with the correct state
 test('correctly initializes state', () => {
   const { getByText } = render(<Main />);
-  expect({ getByText }.initialState).toEqual({ items: [] })
+  expect({ getByText }.initialState.toEqual({ items: [] }))
 })
 
 /* CART TESTS */
 
 //Tests if Cart initializes displaying the correct information
-test('initializes with 0 items', () => {
-  let testItems = [];
-  const { getByText } = render(<Cart items={testItems} />);
-  const text = getByText('items in cart')
-  expect(text).toBeInTheDocument();
-})
 test('initializes with $0 price', () => {
   let testItems = [];
   const { getByText } = render(<Cart items={testItems} />);
