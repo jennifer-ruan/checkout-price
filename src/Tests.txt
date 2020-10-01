@@ -1,0 +1,20 @@
+Manual Tests (to be performed before pushing)
+
+1. Check that all text renders correctly
+    1. No unexpected values such as NaN
+    2. Items should render correctly on the left side (each should have an image, title (ex. 'ground beef'), and include an "Add to Cart" button)
+    3. Cart should render correctly on the right (should initialize with '0 items in Cart' at the top, 'Total: $0' and 'After tax: $0' underneath)
+
+2. Check that items are added to cart correctly from the items
+    1. Add, in this order, 'squid', 'ground beef', and 'lettuce' to the cart
+    2. Check that the cart displays the items top-down in the same order you added them in (squid, ground beef, lettuce)
+    3. The cart should contain the text ('3 items in cart', 'Total: $60', and 'After tax: $67.8')
+
+3. Check that items added from the cart are calculated 
+    1. Press the '+' button on any item in the cart
+    2. The list of items shouldn't get any longer, but the # of items in cart and the total price should change correctly
+
+4. Check that items removed from the cart are removed correctly
+    1. Press the '-' button on all items in the cart until they disappear
+    2. # of items in cart and total price should update correctly
+    3. List items should disappear once they've reached 0 quantity

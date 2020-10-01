@@ -1,0 +1,16 @@
+Suggested Workflow Steps
+
+1. Clone the project and checkout to development branch
+    - git clone https://github.com/jennifer-ruan/checkout-price.git
+    - git checkout development
+
+2. Create a branch to push your own changes to (preferably with your own name)
+    - git checkout -b [your branch name]
+
+3. Perform manual tests (see ./src/Tests.txt) before you push your changes
+
+4. Push your changes to your own branch
+    - git checkout [your branch name]
+    - git push --set-upstream origin [your branch name]
+
+5. Create a pull request on GitHub (make sure that you're trying to merge your branch with the development branch, not master)
