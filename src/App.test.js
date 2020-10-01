@@ -5,8 +5,6 @@ import App from './App';
 import Cart from './components/Cart.js';
 import Main from './components/Main.js';
 
-afterEach(cleanup)
-
 /* RENDERING TESTS */
 
 //Tests if the app renders at all (ie. displays "Groceries")
