@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/checkout-price/static/css/main.18a6e4c2.chunk.css",
+    "main.js": "/checkout-price/static/js/main.64f5c266.chunk.js",
+    "main.js.map": "/checkout-price/static/js/main.64f5c266.chunk.js.map",
+    "runtime-main.js": "/checkout-price/static/js/runtime-main.4991ff37.js",
+    "runtime-main.js.map": "/checkout-price/static/js/runtime-main.4991ff37.js.map",
+    "static/js/2.84482ce9.chunk.js": "/checkout-price/static/js/2.84482ce9.chunk.js",
+    "static/js/2.84482ce9.chunk.js.map": "/checkout-price/static/js/2.84482ce9.chunk.js.map",
+    "index.html": "/checkout-price/index.html",
+    "precache-manifest.a9dd4a8a1bde5578631bd518d19f4975.js": "/checkout-price/precache-manifest.a9dd4a8a1bde5578631bd518d19f4975.js",
+    "service-worker.js": "/checkout-price/service-worker.js",
+    "static/css/main.18a6e4c2.chunk.css.map": "/checkout-price/static/css/main.18a6e4c2.chunk.css.map",
+    "static/js/2.84482ce9.chunk.js.LICENSE.txt": "/checkout-price/static/js/2.84482ce9.chunk.js.LICENSE.txt",
+    "static/media/ground_beef.jpg": "/checkout-price/static/media/ground_beef.656f2307.jpg",
+    "static/media/lettuce.jpg": "/checkout-price/static/media/lettuce.57bf3bc0.jpg",
+    "static/media/squid.jpg": "/checkout-price/static/media/squid.f63ead84.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4991ff37.js",
+    "static/js/2.84482ce9.chunk.js",
+    "static/css/main.18a6e4c2.chunk.css",
+    "static/js/main.64f5c266.chunk.js"
+  ]
+}
